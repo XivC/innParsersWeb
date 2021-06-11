@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сборщик информации</title>
+</head>
+
+<body>
+<h1>Результаты сканирований</h1>
+<table>
+    {%for file in files%}
+    <li>
+        {% load static %}
+        <a href = "/information_scanner/download?file={{file}}" method = "get">{{file}}</a>
+    </li>
+    
+    {%endfor%}
+</table>
+</body>
+</html>

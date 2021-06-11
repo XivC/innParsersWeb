@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сборщик информации</title>
+</head>
+
+<body>
+  <h1>Основрной сканнер</h1>
+  <a target="_blank" href="/menu" style = "font-size: 150%">Возврат в меню</a>
+  
+  {%if loaded == True%}
+    <font color=green size=14>Загружено с именем {{ld_name}}</font>
+  {%endif%}
+  <form method="post" enctype="multipart/form-data" , style="padding-top: 5cm;" action="/mainscanner/upload_file">
+    {% csrf_token %}
+    <div style = "padding-bottom: 4.8em" >
+      <label for="file"><b>Выберете файл для сканирования</b></label>
+      <input type="file" id="file" name="file" accept=".xlsx">
+    </div>
+    <h2>Настройка сервисов</h2>
+    <table>
+      <tr>
+      <td><label for="inn_parser">Искать ИНН </label></td>
+      <td> <input id="inn_parser" type="checkbox" name="inn_parser" ></td>
+    </tr>
+    <tr>
+      <td><label for="information_scanner">Собирать информацию </label></td>
+      <td> <input id="information_scanner" type="checkbox" name="information_scanner" ></td>
+    </tr>
+    <tr>
+      <td><label for="okved_scanner">Проставить коды ОКВЕД </label></td>
+      <td> <input id="okved_scanner" type="checkbox" name="okved_scanner" ></td>
+    </table>
+    <h2>Настройка парера ИНН</h2>
+    <a>(не требует заполнения, если не используется)</a>
+    <table>
+      <tr>
+      <td><label for="inn_search_key_column">Ключевой столбец</label></td>
+      <td> <input id="inn_search_key_column" type="text" name="inn_search_key_column" ></td>
+    </tr>
+    <tr>
+      <td><label for="inn_search_columns">Столбцы для поиска</label></td>
+      <td> <input id="inn_search_columns" type="text" name="inn_search_columns" ></td>
+    </tr>
+    <table>
+    <h2>Настройка полей таблицы</h2>
+    <table>
+     <tr>
+     <td><b style = "padding-right: 2em">Название поля<b><td>
+     <td><b style = "padding-right: 2em">Столбец в файле</b><td>
+     <td><b>Определить столбец автоматически<b><td>
+     <tr>
+    </table>
+    <table>
+    {%for col_id, col_name in columns%}
+      <tr>
+      <td><label for="{{col_id}}">{{col_name}} </label></td>
+      <td> <input id="{{col_id}}" type="text" name="{{col_id}}" ></td>
+      <td> <input id="{{col_id}}" type="checkbox" name="{{col_id}}" ></td>
+      </tr>
+
+    {%endfor%}
+    </table>
+
+    
+    <div style="padding-top: 0.5cm">
+      <button>Сканировать</button>
+    </div>
+    <div style = "padding-top: 1cm">
+      <a target="_blank" rel="noopener noreferrer" href="/mainscanner/results" style = "font-size: 300%">Страница с результатами</a>
+    </div>
+  </form>
+
+</body>
+
+</html>

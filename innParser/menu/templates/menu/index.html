@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+</head>
+<body>
+    <h1>Меню</h1>
+    <table>
+    <li>
+            <a href='/mainscanner' style = "font-size: 150%"> Основной сканнер </a>
+        </li>
+        <li>
+            <a href='/inn_parser' style = "font-size: 150%"> Парсер инн </a>
+        </li>
+        <li>
+            <a href='/information_scanner' style = "font-size: 150%"> Сборщик информации </a>
+        </li>
+        <li>
+            <a href='/okved_scanner' style = "font-size: 150%"> Сборщик ОКВЕД </a>
+        </li>
+        
+    </table>
+    <h1>Настройка контур/СБИС</h1>
+    <form action="/menu/kontur_get_link" method="get">
+    <label for="email_field">Введите e-mail: </label>
+    <input id="email_field" type="text" name="email_field" >
+    <input type="submit" value="отправить ссылку для входа">
+  </form>
+  <form action="/menu/kontur_auth" method="get">
+    <label for="link_field">Скопируйте сюда ссылку для входа: </label>
+    <input id="link_field" type="text" name="link_field">
+    <input type="submit" value="выполнить вход">
+  </form>
+  <form action="/menu/sbis_auth" method="get">
+    <label for="sbis">Войти в СБИС: </label>
+    <input type="submit" value="выполнить вход">
+  </form>
+</body>
+</html>

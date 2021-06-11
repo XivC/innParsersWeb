@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Парсер ИНН</title>
+</head>
+
+<body>
+  <h1>Парсер ИНН</h1>
+  <a target="_blank" href="/menu" style = "font-size: 150%">Возврат в меню</a>
+  <form action="/inn_parser/search_result" method="get">
+    <label for="results">Введите поисковый запрос: </label>
+    <input id="results" type="text" name="results" value="{{ query }}">
+    <input type="submit" value="поиск">
+  </form>
+  <font color={{color}} size=20>{{inn}}</font>
+
+  <form method="post" enctype="multipart/form-data" , style="padding-top: 5cm;" action="/inn_parser/upload_file">
+    {% csrf_token %}
+    <div>
+      <label for="file"><b>Выберете файл для сканирования</b></label>
+      <input type="file" id="file" name="file" accept=".xlsx">
+    </div>
+    <div style="padding-top: 0.5cm">
+      <label for="key_input" style = "padding-right: 6em">Ключевой столбец: </label>
+      <input id="key_input" type="text" name="key_input">
+    </div>
+    <div style="padding-top: 0.5cm">
+      <label for="query_input" style = "padding-right: 5.25em">Столбцы для поиска: </label>
+      <input id="query_input" type="text" name="query_input" >
+    </div>
+    <div style="padding-top: 0.5cm">
+      <label for="write_input" style = "padding-right: 5.55em">Столбец для записи: </label>
+      <input id="write_input" type="text" name="write_input" >
+    </div>
+    <div style="padding-top: 0.5cm">
+      <label for="ignore_input" style = "padding-right: 4.8em">Игнорировать строки: </label>
+      <input id="ignore_input" type="text" name="ignore_input" >
+    </div>
+    <div style="padding-top: 0.5cm">
+      <label for="number_correction" style = "padding-right: 1.85em">Коррекция номера телефона: </label>
+      <input id="number_correction" type="text" name="number_correction" >
+    </div>
+    <div style="padding-top: 0.5cm">
+      <button>Сканировать</button>
+    </div>
+    <div style = "padding-top: 1cm">
+      <a target="_blank" rel="noopener noreferrer" href="/inn_parser/results" style = "font-size: 300%">Страница с результатами</a>
+    </div>
+  </form>
+
+</body>
+
+</html>

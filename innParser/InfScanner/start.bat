@@ -1,0 +1,2 @@
+python InformationCollector.py
+pause

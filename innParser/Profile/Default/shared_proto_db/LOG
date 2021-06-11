@@ -1,0 +1,72 @@
+2021/06/01-00:09:38.417 149dc Reusing MANIFEST C:\Users\XivS\Desktop\mamkasoft\Artemiy\parser_inn\webinterface\innParser\Profile\Default\shared_proto_db/MANIFEST-000001
+2021/06/01-00:09:38.418 149dc Recovering log #62
+2021/06/01-00:09:38.419 149dc Reusing old log C:\Users\XivS\Desktop\mamkasoft\Artemiy\parser_inn\webinterface\innParser\Profile\Default\shared_proto_db/000062.log 
+2021/06/01-00:10:06.444 1401c Level-0 table #66: started
+2021/06/01-00:10:06.453 1401c Level-0 table #66: 117506 bytes OK
+2021/06/01-00:10:06.457 1401c Delete type=0 #62
+2021/06/01-00:11:53.714 149dc Level-0 table #68: started
+2021/06/01-00:11:53.721 149dc Level-0 table #68: 109654 bytes OK
+2021/06/01-00:11:53.724 149dc Delete type=0 #65
+2021/06/01-00:13:11.561 f0a4 Level-0 table #70: started
+2021/06/01-00:13:11.574 f0a4 Level-0 table #70: 110437 bytes OK
+2021/06/01-00:13:11.577 f0a4 Delete type=0 #67
+2021/06/01-00:13:11.578 f0a4 Compacting 4@0 + 1@1 files
+2021/06/01-00:13:11.707 f0a4 Generated table #71@0: 3803 keys, 695566 bytes
+2021/06/01-00:13:11.707 f0a4 Compacted 4@0 + 1@1 files => 695566 bytes
+2021/06/01-00:13:11.708 f0a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/06/01-00:13:11.709 f0a4 Delete type=2 #60
+2021/06/01-00:13:11.709 f0a4 Delete type=2 #63
+2021/06/01-00:13:11.709 f0a4 Delete type=2 #66
+2021/06/01-00:13:11.710 f0a4 Delete type=2 #68
+2021/06/01-00:13:11.710 f0a4 Delete type=2 #70
+2021/06/01-00:14:39.725 1401c Level-0 table #73: started
+2021/06/01-00:14:39.748 1401c Level-0 table #73: 112112 bytes OK
+2021/06/01-00:14:39.750 1401c Delete type=0 #69
+2021/06/01-00:16:08.712 1401c Level-0 table #75: started
+2021/06/01-00:16:08.822 1401c Level-0 table #75: 110235 bytes OK
+2021/06/01-00:16:08.825 1401c Delete type=0 #72
+2021/06/01-00:17:22.609 fb68 Level-0 table #77: started
+2021/06/01-00:17:22.777 fb68 Level-0 table #77: 109148 bytes OK
+2021/06/01-00:17:22.842 fb68 Delete type=0 #74
+2021/06/01-00:18:19.875 1adf0 Level-0 table #79: started
+2021/06/01-00:18:19.887 1adf0 Level-0 table #79: 109245 bytes OK
+2021/06/01-00:18:19.890 1adf0 Delete type=0 #76
+2021/06/01-00:18:19.892 1adf0 Compacting 4@0 + 1@1 files
+2021/06/01-00:18:19.978 1adf0 Generated table #80@0: 4435 keys, 914035 bytes
+2021/06/01-00:18:19.978 1adf0 Compacted 4@0 + 1@1 files => 914035 bytes
+2021/06/01-00:18:19.980 1adf0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/06/01-00:18:19.981 1adf0 Delete type=2 #71
+2021/06/01-00:18:19.981 1adf0 Delete type=2 #73
+2021/06/01-00:18:19.981 1adf0 Delete type=2 #75
+2021/06/01-00:18:19.981 1adf0 Delete type=2 #77
+2021/06/01-00:18:19.981 1adf0 Delete type=2 #79
+2021/06/01-00:19:38.413 fb68 Level-0 table #82: started
+2021/06/01-00:19:38.424 fb68 Level-0 table #82: 110304 bytes OK
+2021/06/01-00:19:38.426 fb68 Delete type=0 #78
+2021/06/01-00:20:32.375 13d44 Level-0 table #84: started
+2021/06/01-00:20:32.385 13d44 Level-0 table #84: 109822 bytes OK
+2021/06/01-00:20:32.387 13d44 Delete type=0 #81
+2021/06/01-00:21:28.453 79b4 Level-0 table #86: started
+2021/06/01-00:21:28.463 79b4 Level-0 table #86: 111581 bytes OK
+2021/06/01-00:21:28.466 79b4 Delete type=0 #83
+2021/06/01-00:22:28.421 f0a4 Level-0 table #88: started
+2021/06/01-00:22:28.438 f0a4 Level-0 table #88: 108412 bytes OK
+2021/06/01-00:22:28.441 f0a4 Delete type=0 #85
+2021/06/01-00:22:28.441 f0a4 Compacting 4@0 + 1@1 files
+2021/06/01-00:22:28.536 f0a4 Generated table #89@0: 5062 keys, 1121490 bytes
+2021/06/01-00:22:28.536 f0a4 Compacted 4@0 + 1@1 files => 1121490 bytes
+2021/06/01-00:22:28.538 f0a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/06/01-00:22:28.539 f0a4 Delete type=2 #80
+2021/06/01-00:22:28.540 f0a4 Delete type=2 #82
+2021/06/01-00:22:28.540 f0a4 Delete type=2 #84
+2021/06/01-00:22:28.540 f0a4 Delete type=2 #86
+2021/06/01-00:22:28.540 f0a4 Delete type=2 #88
+2021/06/01-00:23:30.741 13d44 Level-0 table #91: started
+2021/06/01-00:23:30.760 13d44 Level-0 table #91: 109352 bytes OK
+2021/06/01-00:23:30.763 13d44 Delete type=0 #87
+2021/06/01-00:24:24.447 f0a4 Level-0 table #93: started
+2021/06/01-00:24:24.465 f0a4 Level-0 table #93: 110643 bytes OK
+2021/06/01-00:24:24.468 f0a4 Delete type=0 #90
+2021/06/01-00:25:07.750 13d44 Level-0 table #95: started
+2021/06/01-00:25:07.777 13d44 Level-0 table #95: 110515 bytes OK
+2021/06/01-00:25:07.780 13d44 Delete type=0 #92

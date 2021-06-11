@@ -1,0 +1,15 @@
+2021/06/01-00:09:37.673 20ac4 Reusing MANIFEST C:\Users\XivS\Desktop\mamkasoft\Artemiy\parser_inn\webinterface\innParser\Profile\Default\Local Storage\leveldb/MANIFEST-000001
+2021/06/01-00:09:37.676 20ac4 Recovering log #165
+2021/06/01-00:09:37.677 20ac4 Reusing old log C:\Users\XivS\Desktop\mamkasoft\Artemiy\parser_inn\webinterface\innParser\Profile\Default\Local Storage\leveldb/000165.log 
+2021/06/01-00:17:40.389 20ac4 Level-0 table #168: started
+2021/06/01-00:17:40.394 20ac4 Level-0 table #168: 17794 bytes OK
+2021/06/01-00:17:40.403 20ac4 Delete type=0 #165
+2021/06/01-00:17:40.405 20ac4 Compacting 4@0 + 1@1 files
+2021/06/01-00:17:40.410 20ac4 Generated table #169@0: 38 keys, 4414 bytes
+2021/06/01-00:17:40.410 20ac4 Compacted 4@0 + 1@1 files => 4414 bytes
+2021/06/01-00:17:40.413 20ac4 compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/01-00:17:40.417 20ac4 Delete type=2 #156
+2021/06/01-00:17:40.417 20ac4 Delete type=2 #159
+2021/06/01-00:17:40.417 20ac4 Delete type=2 #162
+2021/06/01-00:17:40.417 20ac4 Delete type=2 #164
+2021/06/01-00:17:40.417 20ac4 Delete type=2 #168

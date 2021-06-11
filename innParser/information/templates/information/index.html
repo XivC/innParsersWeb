@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сборщик информации</title>
+</head>
+
+<body>
+  <h1>Сборщик информации</h1>
+  <a target="_blank" href="/menu" style = "font-size: 150%">Возврат в меню</a>
+  
+  {%if loaded == True%}
+    <font color=green size=14>Загружено с именем {{ld_name}}</font>
+  {%endif%}
+  <form method="post" enctype="multipart/form-data" , style="padding-top: 5cm;" action="/information_scanner/upload_file">
+    {% csrf_token %}
+    <div style = "padding-bottom: 4.8em" >
+      <label for="file"><b>Выберете файл для сканирования</b></label>
+      <input type="file" id="file" name="file" accept=".xlsx">
+    </div>
+    <table>
+      <tr>
+        <td><label for="inn_input"><b>Инн искать по столбцу: </b></label></td>
+        <td><input id="inn_input" type="text" name="inn_input"></td>
+      </tr>
+      <tr>
+        <td><label for="inn_output"><b>Запись в файл по столбцу: </b></label></td>
+        <td><input id="inn_output" type="text" name="inn_output" ></td>
+      </tr>
+    
+    {%for col_id, col_name in columns%}
+      <tr>
+      <td><label for="{{col_id}}">{{col_name}} </label></td>
+      <td> <input id="{{col_id}}" type="text" name="{{col_id}}" ></td>
+      </tr>
+
+    {%endfor%}
+    </table>
+
+    
+    <div style="padding-top: 0.5cm">
+      <button>Сканировать</button>
+    </div>
+    <div style = "padding-top: 1cm">
+      <a target="_blank" rel="noopener noreferrer" href="/information_scanner/results" style = "font-size: 300%">Страница с результатами</a>
+    </div>
+  </form>
+
+</body>
+
+</html>

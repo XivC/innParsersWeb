@@ -1,0 +1,4 @@
+[133980:57864:0601/000938.146:ERROR:device_event_log_impl.cc(214)] [00:09:38.145] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: ѕрисоединенное к системе устройство не работает. (0x1F)
+[133980:57864:0601/000938.166:ERROR:device_event_log_impl.cc(214)] [00:09:38.166] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: ѕрисоединенное к системе устройство не работает. (0x1F)
+[133980:57864:0601/000938.168:ERROR:device_event_log_impl.cc(214)] [00:09:38.168] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: ѕрисоединенное к системе устройство не работает. (0x1F)
+[133980:57864:0601/002516.264:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
